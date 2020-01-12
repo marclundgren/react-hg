@@ -7,15 +7,15 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <Hg>
-        <Header>
+        <Header data-testid="hg-header">
           <h1>tis but a scratch</h1>
         </Header>
-        <Navigation>
+        <Navigation data-testid="hg-navigation">
           <a href="/">King Arthur</a>
           <a href="/about">Black Knight</a>
         </Navigation>
-        <Aside>Just a flesh wound</Aside>
-        <Main>
+        <Aside data-testid="hg-aside">Just a flesh wound</Aside>
+        <Main data-testid="hg-main">
           <div>
             <p>
               <strong>King Arthur:</strong>
@@ -33,7 +33,7 @@ const App: React.FC = () => {
             </p>
           </div>
         </Main>
-        <Footer>
+        <Footer data-testid="hg-footer">
           <span role="img" aria-label="swordman">
             🤺
           </span>{" "}
